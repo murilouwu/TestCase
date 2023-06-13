@@ -6,18 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/39cab4bf95.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>App RH</title>
+    <script src="assets/script.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Casos de Testes</title>
 </head>
 <body>
-    <div class="operetion">
-        <div class="rigth">
-            <div class="site"></div>
-        </div>
-        <div class="left">
-            <div class="debug"></div>
-        </div>
+    <h1 class="Title">Casos de Testes</h1>
+    <div class="operetion" id="Btns">
     </div>
+    <script>
+        window.onload = ()=>{
+            let div = document.querySelector('#Btns');
+            let QtCase = 5;
+            for (var i = 0; i<QtCase; i++){
+                div.innerHTML += `
+                    <a href="Pages/Case${i}.html" class="btn">Case ${(i+1)}</a>
+                `;
+            }
+        };
+        document.querySelector('body').addEventListener('keydown', (event)=>{
+        var KeyCode = event.keyCode || event.which;
+            //pages
+        });
+    </script>
 </body>
 </html>
