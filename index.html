@@ -24,9 +24,14 @@
                 `;
             }
         };
+        
         document.querySelector('body').addEventListener('keydown', (event)=>{
-        var KeyCode = event.keyCode || event.which;
-            //pages
+            var KeyCode = event.keyCode || event.which;
+            if (KeyCode >= 49 && KeyCode <= 53) {
+                var pageNumber = KeyCode - 49;
+                var url = "Pages/Case" + pageNumber + ".html";
+                red(url);
+            }
         });
     </script>
 </body>

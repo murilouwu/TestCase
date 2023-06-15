@@ -57,10 +57,16 @@
                 </table>
             `;
         };
+        
         document.querySelector('body').addEventListener('keydown', (event)=>{
-        var KeyCode = event.keyCode || event.which;
+            var KeyCode = event.keyCode || event.which;
+            let KeyIndex = 5+48;
             if(KeyCode==37){
                 red('../index.html');
+            }else if (KeyCode >= 49 && KeyCode <= 53 && KeyCode!=KeyIndex) {
+                var pageNumber = KeyCode - 49;
+                var url = "Case" + pageNumber + ".html";
+                red(url);
             }
         });
     </script>

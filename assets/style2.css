@@ -8,9 +8,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    height: auto;
     width: 80vw;
     margin-top: 10vh;
+    margin-bottom: 10vh;
 }
     .tableMain .titleTb{
         width: 100%;
@@ -40,24 +41,26 @@ body{
             display: flex;
             width: 100%;
             height: auto;
-            align-items: center;
             font-size: 2vh;
             font-style: italic;
             font-family: monospace;
+            justify-content: space-between;
             border-bottom: 1px solid var(--corC);
         }
             .tableMain .table th{
                 display: flex;
                 font-weight: bold;
-                height: 100%;
+                height: auto;
                 padding: 2vh 1vw;
                 border-right: 3px solid var(--corC);
                 color: var(--corB);
                 background-color: var(--corE);
                 width: 21%;
+                align-items: center;
             }
             .tableMain .table td{
-                width: 78%;
+                width: 72%;
                 text-align: center;
                 word-wrap: break-word;
+                padding: 2vh 0vw;
             }
